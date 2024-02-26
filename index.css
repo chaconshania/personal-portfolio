@@ -1,22 +1,42 @@
 * {
     box-sizing: border-box;
-    font-family: "Lato", sans-serif !important;
 }
 :root {
  --primary-color: #F1EEE2;
  --secondary-color: #FC1C14;
 }
 
-.large-title {
-    font-size: 5vw !important;
+body {
+    background-color: var(--primary-color);
+}
+
+/* animation reveal when hover over [SC]] on navbar */ 
+.name-reveal {
+    display: none; 
+}
+
+/*navbar decoration */ 
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* main */ 
+
+main {
+    min-height: 100vh;
+    font-family: "Lato", sans-serif
+}
+.homepage-title {
+    font-size: 4rem;
+    font-weight: 500;
 }
 
 /* colors for home webpage */
-.bg-body{
-    background-color: var(--primary-color) !important;
+.nav-bg-color{
+    background-color: var(--primary-color);
 }
 .introduction{
-    background-color: var(--primary-color) !important;
+    background-color: var(--primary-color);
 }
 .emphasis-color {
     color: var(--secondary-color); 
@@ -27,19 +47,13 @@
     transition: all 200ms ease-in-out; 
 }
 .nav-link:hover {
-    letter-spacing: 2px!important;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
- 
+
+a:hover .name-reveal{
+    display: inline;  
+}
 /*mobile interface */ 
 
-@media (max-width: 600px) {
-    h1 {
-        text-align: center;
-        color: blue; 
-    }
-    .header {
-        margin: 0; 
-        color: blue; 
-    }
-}
 
