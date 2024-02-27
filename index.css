@@ -13,45 +13,59 @@ body {
     background-color: var(--primary-color);
 }
 
+/* dark/light mode toggle */ 
+.dark-mode {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.dark-mode-icons {
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 20px; 
+    padding: 10px; 
+    cursor: pointer;
+}
+
 /* animation reveal when hover over [SC]] on navbar */ 
 .name-reveal {
     display: none; 
 }
 
-/*navbar decoration */ 
-.navbar-brand {
-    font-weight: bold;
-}
-
 /* main */ 
 
-main {
-    color: var(--text-color)
+.introduction {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
     min-height: 100vh;
     font-family: "Lato", sans-serif;
-    cursor: pointer;
-    overflow: hidden;
 }
 .homepage-title {
     font-size: 4rem;
     font-weight: 500;
 }
 
-/* colors for home webpage */
+/* navbar */
 .nav-bg-color{
     background-color: var(--primary-color);
 }
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar {
+    border-bottom: 2px solid #000;
+}
+
+/* colors for home webpage */
 .introduction{
     background-color: var(--primary-color);
 }
 .emphasis-color {
     color: var(--secondary-color); 
-}
-
-/* icons decoration */ 
-.icons {
-    font-size: 2rem;
-    gap: 1rem; 
 }
 
 /* hover animations */
@@ -67,3 +81,17 @@ a:hover .name-reveal{
     display: inline;  
 }
 /*mobile interface */ 
+
+/* cursor  */ 
+.cursor {
+    position: fixed;
+    left: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform .1s;
+    background: black;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+}
