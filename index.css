@@ -70,6 +70,7 @@ body {
 
 /* hover animations */
 .nav-link {
+    color: var(--text-color);
     transition: all 200ms ease-in-out; 
 }
 .nav-link:hover {
@@ -94,4 +95,14 @@ a:hover .name-reveal{
     width: 20px;
     height: 20px;
     z-index: 999;
+}
+
+/* sc logo */
+.sc-logo {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 400px;
 }
