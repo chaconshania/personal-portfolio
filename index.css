@@ -81,7 +81,6 @@ body {
 a:hover .name-reveal{
     display: inline;  
 }
-/*mobile interface */ 
 
 /* cursor  */ 
 .cursor {
@@ -105,4 +104,18 @@ a:hover .name-reveal{
 }
 img {
     width: 400px;
+}
+
+/*mobile interface */
+@media (max-width: 600px) {
+    h1, h6 {
+        text-align: center;
+    }
+    h1 {
+        padding-top: 50px;
+    }
+    img {
+        width: 200px; 
+        padding-top: 20px; 
+    }
 }

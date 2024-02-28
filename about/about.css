@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+
+
+}
+
+:root {
+    --primary-color: #DADADA;
+    --secondary-color: #181818;
+}
+
+body {
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    font-family: "Lato", sans-serif;
+}
+.about-me-description {
+    letter-spacing: -0.3px;
+}
